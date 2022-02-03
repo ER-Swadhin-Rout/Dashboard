@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+
+        <title>Dashboard</title>
+
+    </head>
+
+
+    <body>
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-white shadow-sm  bg-white rounded mb-3">
+            <div class="container-fluid">
+
+                <button type="button" class="navbar-toggler mr-2 " data-toggle="offcanvas"
+                    title="Toggle responsive left sidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <h3>Swadhin Rout</h3>
+
+                <div id="wrapper">
+                    <div id="sidebar-wrapper">
+                        <ul class="sidebar-nav">
+                            <div class="sidebar-brand">
+                                <div class="prop">
+                                    Content Properties
+                                </div>
+
+                                <div class="close">
+
+                                    <i class="fas fa-times" style="margin-left: 16rem;"></i>
+                                </div>
+                            </div>
+
+                            <form>
+                                <div class="emb">
+                                    <h6><i class="fas fa-link"></i>Embed</h6>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Enter your name">
+                                        </div>
+                                        <div class="col">
+                                            <button type="submit" class="btn btn-primary"><i class="fas fa-copy"></i>
+                                                Copy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr>
+
+                            <form>
+                                <h6><i class="fas fa-link"></i>Set PPV-Big</h6>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Enter your name">
+                                    </div>
+                                    <div class="col">
+                                        <button type="submit" class="btn btn-primary"><i class="fas fa-plus"></i>
+                                            Add</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr>
+                            <form>
+                                <h6><i class="fas fa-link"></i>Set Gio Block</h6>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Enter your name">
+                                    </div>
+                                    <div class="col">
+                                        <button type="submit" class="btn btn-primary"><i class="fas fa-plus"></i>
+                                            Add</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr>
+                            <h6><i class="fas fa-link"></i>Offline View</h6>
+                            <label class="toggle-switch">
+                                <input type="checkbox" class="checkbox side" id="checkbox" />
+                                <span class="switch-btn"></span>
+                            </label>
+                        </ul>
+                    </div>
+                    <div id="page-content-wrapper">
+                        <div class="container-fluid">
+                            <a href="#menu-toggle" class="btn btn-primary float-right" id="menu-toggle"><i
+                                    class="fas fa-chevron-left"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="container-fluid" id="main">
+            <div class="row row-offcanvas row-offcanvas-left">
+                <div class="col-md-3 col-lg-2 sidebar-offcanvas bg-white shadow-lg  mb-5 bg-white rounded pl-0"
+                    id="sidebar" role="navigation">
+                    <ul class="nav flex-column sticky-top pl-0 pt-5 mt-3">
+                        <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-tachometer-alt"></i>
+                                Dashboard
+                                <span style="float: right;"><i class="fas fa-chevron-down"></i></span> </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-tachometer-alt"></i>
+                                Dashboard
+                                <span style="float: right;"><i class="fas fa-chevron-down"></i></span> </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-tachometer-alt"></i>
+                                Dashboard
+                                <span style="float: right;"><i class="fas fa-chevron-down"></i></span> </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-tachometer-alt"></i>
+                                Dashboard
+                                <span style="float: right;"><i class="fas fa-chevron-down"></i></span> </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-tachometer-alt"></i>
+                                Dashboard
+                                <span style="float: right;"><i class="fas fa-chevron-down"></i></span> </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-tachometer-alt"></i>
+                                Dashboard
+                                <span style="float: right;"><i class="fas fa-chevron-down"></i></span> </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-tachometer-alt"></i>
+                                Dashboard
+                                <span style="float: right;"><i class="fas fa-chevron-down"></i></span> </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-tachometer-alt"></i>
+                                Dashboard
+                                <span style="float: right;"><i class="fas fa-chevron-down"></i></span> </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-tachometer-alt"></i>
+                                Dashboard
+                                <span style="float: right;"><i class="fas fa-chevron-down"></i></span> </a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col main pt-5  mt-3">
+                    <div class="library ">
+                        <h1 class="display-4 bg-light shadow-sm rounded p-2">
+                            Content Library
+                        </h1>
+                    </div>
+                    <div class="buton">
+                        <nav class="navbar navbar-dark bg-white navbar-expand-sm shadow-sm rounded">
+                            <div class="btn-group ">
+                                <li><button type="button" class="btn btn-primary"><span><i
+                                                class="fas fa-plus"></i></span>Add Content</button></li>
+                                <li><button type="button" class="btn btn-secondary"><span><i
+                                                class="fas fa-arrow-down"></i>Import</button></li>
+                                <li><button type="button" class="btn btn-secondary"><span><i
+                                                class="fas fa-sync"></i>Refresh</button></li>
+                            </div>
+                            <form class="form-inline ml-auto">
+                                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </nav>
+                    </div>
+
+                    <div class="container filtering bg-light shadow-sm  mt-2 mr-3">
+                        <div class="filter-cat row">
+                            <div class="col col-md-3 col-xs-12">
+                                <p>Filter By Category</p>
+                                <div class="dropdown" data-control="checkbox-dropdown">
+                                    <label class="dropdown-label">Select <span style="float: right;"><i
+                                                class="fas fa-chevron-down"></i></span></a></li></label>
+                                    <div class="dropdown-list">
+                                        <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+                                            <div class="input-group">
+                                                <input type="search" placeholder="search"
+                                                    aria-describedby="button-addon1"
+                                                    class="form-control border-0 bg-light">
+                                                <div class="input-group-append">
+                                                    <button id="button-addon1" type="submit"
+                                                        class="btn btn-link text-primary"><i
+                                                            class="fa fa-search"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                                            One
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 2" />
+                                            Two
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 3" />
+                                            Three
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 4" />
+                                            Four
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 5" />
+                                            Five
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-md-3 col-xs-12">
+                                <p>Filter By Category</p>
+                                <div class="dropdown" data-control="checkbox-dropdown">
+                                    <label class="dropdown-label">Select <span style="float: right;"><i
+                                                class="fas fa-chevron-down"></i></label>
+                                    <div class="dropdown-list">
+                                        <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+                                            <div class="input-group">
+                                                <input type="search" placeholder="search"
+                                                    aria-describedby="button-addon1"
+                                                    class="form-control border-0 bg-light">
+                                                <div class="input-group-append">
+                                                    <button id="button-addon1" type="submit"
+                                                        class="btn btn-link text-primary"><i
+                                                            class="fa fa-search"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                                            One
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 2" />
+                                            Two
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 3" />
+                                            Three
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 4" />
+                                            Four
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 5" />
+                                            Five
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-md-3 col-xs-12">
+                                <p>Filter By Category</p>
+                                <div class="dropdown" data-control="checkbox-dropdown">
+                                    <label class="dropdown-label">Select <span style="float: right;"><i
+                                                class="fas fa-chevron-down"></i></label>
+                                    <div class="dropdown-list">
+                                        <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+                                            <div class="input-group">
+                                                <input type="search" placeholder="search"
+                                                    aria-describedby="button-addon1"
+                                                    class="form-control border-0 bg-light">
+                                                <div class="input-group-append">
+                                                    <button id="button-addon1" type="submit"
+                                                        class="btn btn-link text-primary"><i
+                                                            class="fa fa-search"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                                            One
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 2" />
+                                            Two
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 3" />
+                                            Three
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 4" />
+                                            Four
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 5" />
+                                            Five
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-md-3 col-xs-12">
+                                <p>Filter By Category</p>
+                                <div class="dropdown" data-control="checkbox-dropdown">
+                                    <label class="dropdown-label">Select <span style="float: right;"><i
+                                                class="fas fa-chevron-down"></i></label>
+
+                                    <div class="dropdown-list">
+                                        <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+                                            <div class="input-group">
+                                                <input type="search" placeholder="search"
+                                                    aria-describedby="button-addon1"
+                                                    class="form-control border-0 bg-light">
+                                                <div class="input-group-append">
+                                                    <button id="button-addon1" type="submit"
+                                                        class="btn btn-link text-primary"><i
+                                                            class="fa fa-search"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                                            One
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 2" />
+                                            Two
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 3" />
+                                            Three
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 4" />
+                                            Four
+                                        </label>
+
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" name="dropdown-group" value="Selection 5" />
+                                            Five
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-12 col-sm-12 col-xs-12 py-2 shadow-sm bg-white">
+                        <a class="remove-row pull-right ml-3 text-dark" targetDiv="" title="abc" data-id="10"
+                            href="javascript: void(0)"><i class="fas fa-trash-alt"></i>Delete All</a>
+                        <div class="card bg-white text-black h-100">
+                            <table id="employee_grid" class="table table-condensed table-striped " width="100%"
+                                cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox" id="master"></th>
+                                        <th>File Name</th>
+                                        <th>Category</th>
+                                        <th>Forms</th>
+                                        <th class="pull-right">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr data-row-id="1">
+                                        <td><input type="checkbox" class="sub_chk" data-id="1"></td>
+                                        <td>img</td>
+                                        <td>movie</td>
+                                        <td>1</td>
+                                        <td><a class="remove-row pull-right" targetDiv="" title="bca" data-id="10"
+                                                href="javascript: void(0)"><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr data-row-id="2">
+                                        <td><input type="checkbox" class="sub_chk" data-id="2"></td>
+                                        <td>img</td>
+                                        <td>movie</td>
+                                        <td>1</td>
+                                        <td><a class="remove-row pull-right" targetDiv="" title="tbc" data-id="10"
+                                                href="javascript: void(0)"><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr data-row-id="3">
+                                        <td><input type="checkbox" class="sub_chk" data-id="3"></td>
+                                        <td>img</td>
+                                        <td>movie</td>
+                                        <td>1</td>
+                                        <td><a class="remove-row pull-right" targetDiv="" title="ibc" data-id="10"
+                                                href="javascript: void(0)"><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr data-row-id="4">
+                                        <td><input type="checkbox" class="sub_chk" data-id="4"></td>
+                                        <td>img</td>
+                                        <td>movie</td>
+                                        <td>1</td>
+                                        <td><a class="remove-row pull-right" targetDiv="" title="abr" data-id="10"
+                                                href="javascript: void(0)"><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr data-row-id="5">
+                                        <td><input type="checkbox" class="sub_chk" data-id="5"></td>
+                                        <td>img</td>
+                                        <td>movie</td>
+                                        <td>1</td>
+                                        <td><a class="remove-row pull-right" targetDiv="" title="abg" data-id="10"
+                                                href="javascript: void(0)"><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr data-row-id="6">
+                                        <td><input type="checkbox" class="sub_chk" data-id="6"></td>
+                                        <td>img</td>
+                                        <td>movie</td>
+                                        <td>1</td>
+                                        <td><a class="remove-row pull-right" targetDiv="" title="abe" data-id="10"
+                                                href="javascript: void(0)"><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr data-row-id="7">
+                                        <td><input type="checkbox" class="sub_chk" data-id="7"></td>
+                                        <td>img</td>
+                                        <td>movie</td>
+                                        <td>1</td>
+                                        <td><a class="remove-row pull-right" targetDiv="" title="abs" data-id="10"
+                                                href="javascript: void(0)"><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr data-row-id="8">
+                                        <td><input type="checkbox" class="sub_chk" data-id="8"></td>
+                                        <td>img</td>
+                                        <td>movie</td>
+                                        <td>1</td>
+                                        <td><a class="remove-row pull-right" targetDiv="" title="gbc" data-id="10"
+                                                href="javascript: void(0)"><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr data-row-id="9">
+                                        <td><input type="checkbox" class="sub_chk" data-id="9"></td>
+                                        <td>img</td>
+                                        <td>movie</td>
+                                        <td>1</td>
+                                        <td><a class="remove-row pull-right" targetDiv="" title="abv" data-id="10"
+                                                href="javascript: void(0)"><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr data-row-id="10">
+                                        <td><input type="checkbox" class="sub_chk" data-id="10"></td>
+                                        <td>img</td>
+                                        <td>movie</td>
+                                        <td>1</td>
+                                        <td><a class="remove-row pull-right" targetDiv="" title="abchf" data-id="10"
+                                                href="javascript: void(0)"><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+
+                    <footer class="container-fluid">
+                        <p class="text-left small">©Muvi LLC All Rights Reserved</p>
+                    </footer>
+
+
+
+                    <script src="main.js"></script>
+
+    </body>
+
+</html>

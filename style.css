@@ -1,0 +1,292 @@
+body, html {
+    height:100%;
+  }
+  .display-4 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2;
+    padding-left: 17px;
+}
+.fa, .fas {
+    font-weight: 900;
+    padding-right: 7px;
+}
+
+  /*
+   * Off Canvas sidebar at medium breakpoint
+   * --------------------------------------------------
+   */
+  @media screen and (max-width: 992px) {
+  
+    .row-offcanvas {
+      position: relative;
+      -webkit-transition: all 0.25s ease-out;
+      -moz-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out;
+    }
+  
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+      left: -33%;
+    }
+  
+    .row-offcanvas-left.active {
+      left: 33%;
+      margin-left: -6px;
+    }
+  
+    .sidebar-offcanvas {
+      position: absolute;
+      top: 0;
+      width: 33%;
+      height: 100%;
+    }
+  }
+  
+  /*
+   * Off Canvas wider at sm breakpoint
+   * --------------------------------------------------
+   */
+   .nav-link{
+       color: black;
+   }
+   a:hover{
+    color: black;
+}
+.active {
+  background:#dfe0e5;
+  overflow:hidden;
+  border-left:3px solid #00f;
+  color: #007bff;
+}
+.active:hover{
+  color: #007bff;
+}
+  @media screen and (max-width: 34em) {
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+      left: -45%;
+    }
+  
+    .row-offcanvas-left.active {
+      left: 45%;
+      margin-left: -6px;
+    }
+    
+    .sidebar-offcanvas {
+      width: 45%;
+    }
+  }
+  
+  .btn-group li{
+      list-style: none;
+      margin: 5px;
+  }
+  .card {
+      overflow:hidden;
+  }
+  
+  .card-body .rotate {
+      z-index: 8;
+      float: right;
+      height: 100%;
+  }
+  
+  .card-body .rotate i {
+      color: rgba(20, 20, 20, 0.15);
+      position: absolute;
+      left: 0;
+      left: auto;
+      right: -10px;
+      bottom: 0;
+      display: block;
+      -webkit-transform: rotate(-44deg);
+      -moz-transform: rotate(-44deg);
+      -o-transform: rotate(-44deg);
+      -ms-transform: rotate(-44deg);
+      transform: rotate(-44deg);
+  }
+  
+
+  .dropdown {
+    position: relative;
+    font-size: 14px;
+    color: #333;
+  }
+  .dropdown .dropdown-list {
+    padding: 12px;
+    background: #fff;
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    right: 2px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
+    transform-origin: 50% 0;
+    transform: scale(1, 0);
+    transition: transform 0.15s ease-in-out 0.15s;
+    max-height: 66vh;
+    overflow-y: scroll;
+  
+  }
+  .dropdown .dropdown-option {
+    display: block;
+    padding: 8px 12px;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+  }
+  .dropdown .dropdown-label {
+    display: block;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    line-height: 1;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+
+  .dropdown.on .dropdown-list {
+    transform: scale(1, 1);
+    transition-delay: 0s;
+    z-index: 1;
+    width: 100%;
+  }
+  .dropdown.on .dropdown-list .dropdown-option {
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+
+  .dropdown [type=checkbox] {
+    position: relative;
+    top: -1px;
+    margin-right: 4px;
+  }
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+#wrapper {
+  padding-right: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-right: 250px;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 250px;
+  width: 0;
+  height: 100%;
+  margin-right: -250px;
+  overflow-y: auto;
+  background: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-left: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 712px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: black;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+.sidebar-brand{
+  display: flex;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: black;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: black;
+  background: none;
+}
+
+@media (min-width: 768px) {
+  #wrapper {
+    padding-right: 0;
+  }
+  #wrapper.toggled {
+    padding-right: 0px;
+  }
+  #sidebar-wrapper {
+    width: 0;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 35%;
+  }
+  #page-content-wrapper {
+   
+    position: relative;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-left: 0;
+  }
+}
+.form-inline{
+  flex-flow: nowrap;
+}
+
+
+
+
+
+
